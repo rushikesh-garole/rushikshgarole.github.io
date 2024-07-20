@@ -37,22 +37,22 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-    // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.send("service_4pvfemg","template_pfufycd");
-        
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
-    });
-    // <!-- emailjs to mail contact form data -->
+   // <!-- emailjs to mail contact form data -->
+   $("#contact-form").submit(function (event) {
+    emailjs.init("cN2siOHfpyJuBzeaE");
+
+    emailjs.sendForm('service_5jvicgi', 'template_f0c5cdf', '#contact-form')
+        .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document.getElementById("contact-form").reset();
+            alert("Form Submitted Successfully");
+        }, function (error) {
+            console.log('FAILED...', error);
+            alert("Form Submission Failed! Try Again");
+        });
+    event.preventDefault();
+});
+// <!-- emailjs to mail contact form data -->
 
 });
 
