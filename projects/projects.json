@@ -1,0 +1,12 @@
+[
+  {
+    "name": "MusicNut Android App",
+    "desc": "Develope Music Player Android app using android sdk with java",
+    "image": "instagrammern",
+    "category": "mern",
+    "links": {
+      "view": "",
+      "code": "https://github.com/rushikesh-garole/MusicNut"
+    }
+  }
+]
